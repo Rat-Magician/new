@@ -1,8 +1,8 @@
 body {
     display: flex;
     justify-content: space-between;
-    margin: 60 px;
-    padding: 10 px;
+    margin: 60px;
+    padding: 10px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -12,7 +12,8 @@ ul {
     list-style: none;
     margin: 50px 50px 50px 50px;
     position: absolute;
-    background-image: url('https://www.vestikavkaza.ru/upload/2016-09-13/534ac27ac6216a41a8286a50f93c6fc9.jpg');
+    background-image: url('./images/background.png');
+    background-size: cover;
     border-radius: 10px;
 }
 
@@ -20,10 +21,9 @@ a {
     display: block;
     color: white;
     text-decoration: none;
-    background-color: #000000;
     padding: 1em;
 }
 
 a:hover {
-    background-color: lightblue;
+    background: rgba(255, 255, 255, 0.3);
 }
