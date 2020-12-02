@@ -11,16 +11,19 @@ ul {
     padding-left: 0;
     list-style: none;
     margin: 50px 50px 50px 50px;
+    position: absolute;
+    background-image: url('https://www.vestikavkaza.ru/upload/2016-09-13/534ac27ac6216a41a8286a50f93c6fc9.jpg');
+    border-radius: 10px;
 }
 
 a {
     display: block;
-    color: black;
+    color: white;
     text-decoration: none;
-    background-color: #ffbaba;
+    background-color: #000000;
     padding: 1em;
 }
 
 a:hover {
-    background-color: #8b1010;
+    background-color: lightblue;
 }
