@@ -1,43 +1,25 @@
 .rectangle {
-    position: relative;
     width: 1341px;
     height: 285px;
     background: #C4C4C4;
     border-radius: 9px;
+    padding: 34px;
+    box-sizing: border-box;
+}
+.row:last-child {
+    padding-top: 28px;
 }
 .circle {
-    position: absolute;
     width: 89px;
     height: 89px;
     background: #1c6ce6;
     border-radius: 50%;
+    display: inline-block;
+    margin-left: 39px;
 }
-.circle_1 {
-    top: 34px;
-    left: 34px;
+.circle:first-child {
+    margin-left: 0;
 }
-.circle_2 {
-    bottom: 34px;
-    left: 34px;
-}
-.circle_3 {
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-}
-.circle_4 {
-    right: 34px;
-    top: 34px;
-}
-.circle_5 {
-    right: 34px;
-    bottom: 34px;
-}
-.circle-with-border {
-    background: #fff;
-    border: 17px solid #1C6CE5;
-    box-sizing: border-box;
-    box-shadow: 0 5px 11px rgba(0, 0, 0, 0.25);
+.circle_red {
+    background: red;
 }
