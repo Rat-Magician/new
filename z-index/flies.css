@@ -1,0 +1,85 @@
+.wrapper {
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    width: 262px;
+    height: 262px;
+    left: 101px;
+    top: 125px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(./images/image4.png);
+    background-position: center top;
+    border: 10px solid #27292b;
+    box-sizing: border-box;
+    background-size: 105%;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+.manhole {
+    position: absolute;
+    z-index: 1;
+    width: 251px;
+    height: 251px;
+    left: 108px;
+    top: 131px;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+.manhole:hover {
+    transition: .5s ease transform;
+    transform: rotate(10deg) translateX(10px) translateY(130px);
+}
+.manhole:hover + .fly_1 + .fly_2 {
+    animation: .3s linear 0s 1 forwards move;
+}
+
+.fly {
+    position: absolute;
+    animation: .2s ease 0s infinite bzz;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-160px);
+    }
+}
+
+@keyframes bzz {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.fly_1 {
+    top: 42px;
+    left: 278px;
+}
+
+.fly_2 {
+    top: 145px;
+    left: 175px;
+    width: 69px;
+    height: 69px;
+    transform: rotateY(190deg);
+}
+
+.fly_3 {
+    top: 220px;
+    left: 465px;
+    width: 42.41px;
+    height: 33.7px;
+    transform: rotateY(355deg) rotate(45deg);
+}
