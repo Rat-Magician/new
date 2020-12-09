@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.rectangle {
+    height: 230px;
+    width: 230px;
+    background: #C4C4C4;
+    border-radius: 9px;
+    font-family: 'Open Sans', sans-serif;
+}
+.inner-block {
+    width: 400px;
+    padding: 10px 20px;
+}
+p {
+    padding-top: 20px;
+    font-size: 18px;
+}
+h1 {
+    font-weight: 700;
+    font-size: 36px;
+}
