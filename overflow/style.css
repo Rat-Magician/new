@@ -8,6 +8,7 @@
     background: #C4C4C4;
     border-radius: 9px;
     font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
 }
 .inner-block {
     width: 400px;
