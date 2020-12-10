@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin-block: 0;
+    margin-inline: 0;
+    padding-block: 0;
+    padding-inline: 0;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+}
+h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    color: #E8E8E8;
+    margin-left: 29px;
+    margin-top: 4px;
+}
+.notification {
+    padding-block: 11px;
+    padding-inline: 11px;
+    position: relative;
+    min-width: 284px;
+    max-width: 434px;
+    background-color: #FBFBFB;
+    border-radius: 10px;
+    box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 29px;
+    display: table;
+    left: 29px;
+}
+
+.notification:hover {
+    background-color: #6D6D6D;    
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.notification:hover .notification__description,
+.notification:hover .notification__title {   
+    color: white;
+}
+
+.notification:hover .notification__arrow-icon {   
+    visibility: visible;
+}
+
+.notification__icon {
+    vertical-align: middle;
+}
+
+.notification__title {
+    color: #4D4D4D;
+    margin-block: auto;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    display: inline-block;
+    padding-inline-start: 4px;
+}
+
+.notification__description {
+    font-size: 12px;
+    color: #4D4D4D;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    padding-top: 3px;
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-left: 15px;
+    color: rgb(168, 168, 168);
+}
+
+.notification__arrow-icon {
+    position: absolute;
+    right: -21px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    visibility: hidden;
+}
