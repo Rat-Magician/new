@@ -43,7 +43,7 @@ h1 {
     color: white;
 }
 
-.notification:hover .arrow-icon {   
+.notification:hover .notification__arrow-icon {   
     visibility: visible;
 }
 
@@ -70,17 +70,6 @@ h1 {
     padding-top: 3px;
 }
 
-.blocks {
-    width: 434px;
-    height: 65px;
-    left: 29px;
-    top: 187px;
-    background: #FBFBFB;
-    box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-block-start: 29px;
-}
-
 .close {
     cursor: pointer;
     float: right;
@@ -89,8 +78,7 @@ h1 {
     color: rgb(168, 168, 168);
 }
 
-.arrow-icon {
-    position: absolute;
+.notification__arrow-icon {
     position: absolute;
     right: -21px;
     bottom: 0;
