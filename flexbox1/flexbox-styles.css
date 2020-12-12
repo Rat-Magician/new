@@ -10,9 +10,6 @@
 body {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 87px;
     color: #FFFFFF; 
 }
 
@@ -25,7 +22,6 @@ body {
     margin-top: 54px;
     margin-bottom: 49px;
     margin-left: 61px;
-    align-items: center;
 }
 
 .square {
@@ -33,14 +29,16 @@ body {
     margin: 29px;
     height: 96px;
     background-color: #C4C4C4;
-    display: inline-block;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 87px;
 }
 
 .number {
     margin-left: 29px;
 }
 
-.cn {
+.vertical-container {
 flex-direction: column;
 width: 849px;
 height: 434px;
