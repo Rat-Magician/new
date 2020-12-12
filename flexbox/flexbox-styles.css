@@ -43,3 +43,16 @@ body {
     width: 849px;
     height: 434px;
 }
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.space-around {
+    justify-content: space-around;
+}
