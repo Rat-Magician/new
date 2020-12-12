@@ -39,7 +39,7 @@ body {
 }
 
 .vertical-container {
-flex-direction: column;
-width: 849px;
-height: 434px;
+    flex-direction: column;
+    width: 849px;
+    height: 434px;
 }
