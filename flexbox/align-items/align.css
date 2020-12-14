@@ -18,7 +18,7 @@ body {
     height: 100px;
     display: flex;
     width: 849px;
-    height: 167px;
+    height: 220px;
     border: 1px solid #C1C1C1;
     box-sizing: border-box;
     margin-top: 54px;
@@ -46,11 +46,10 @@ body {
     height: 434px;
 }
 
-.space-between {
+.side-center {
     justify-content: space-between;
     align-items: baseline;
 }
-
 
 .center {
     align-items: center;
