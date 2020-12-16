@@ -1,75 +1,93 @@
-* {
-    margin: 0;
-    padding: 0;
-    margin-block: 0;
-    margin-inline: 0;
-    padding-block: 0;
-    padding-inline: 0;
+/*
+  в css есть переменные, я создаю их, чтобы вынести какие-то общие значения
+  или то, что необходимо быстро поменять
+  (некоторые размеры, цвета и прочее или то, что используется 2 или более раз)
+ */
+:root {
+  --border-radius: 8px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
 
 body {
-    display: flex;
-    justify-content: space-between;
-    margin: 60px;
-    padding: 10px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.submenu {
-    border-radius: 0%;
-    left: -28%;
-    top: 99%;
-    margin-left: -105px;
-    align-items: center;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: 1px;
-    flex-direction: column;
-    position: absolute;
-    background: #273037;
-}
-
-.submenu a {
-    border-bottom: 1px solid rgba(255,255,255,.1);
+  display: flex;
+  justify-content: space-between;
+  margin: 60px;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 li {
-    position: relative;
+  position: relative;
+  list-style: none;
 }
 
-nav ul li a:hover, nav ul li a:focus {
-    color: #b7dcff;
- }
-
-li:focus-within> .submenu,
-li:hover .submenu {
-    display: flex;
-    clip: auto;
-    width: auto;
-    height: auto;
-    margin: 0;
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  background-image: url('./images/background.png');
+  background-size: cover;
+  border-radius: var(--border-radius);
 }
 
-ul {
-    display: flex;
-    justify-content:space-around;  
-    padding-left: 0;
-    list-style: none;
-    background-image: url('./images/background.png');
-    background-size: cover;
-    border-radius: 10px;
+/*
+  здесь я указал стрелочки, чтобы применять стили только к прилежащим элементам
+  то есть ко всем внутренним они применяться не будут
+*/
+.navbar > li > a:hover,
+.navbar > li > a:focus {
+  color: #b7dcff;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 1em;
-    white-space: nowrap;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  white-space: nowrap;
 }
 
-a:hover {
-    background: rgba(255, 255, 255, 0.3);
+.submenu {
+  left: -50%;
+  top: 99%;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  opacity: 0;
+  transition: all ease .3s;
+  padding: 1rem;
+}
+
+.submenu a {
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.submenu li {
+  width: 100%;
+  background: #273037;
+}
+
+.submenu li:last-child {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.submenu li:first-child {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+li:focus-within > .submenu,
+li:hover .submenu {
+  display: flex;
+  opacity: 1;
 }
