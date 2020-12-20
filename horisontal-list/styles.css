@@ -1,29 +1,114 @@
-body {
-    display: flex;
-    justify-content: space-between;
-    margin: 60px;
-    padding: 10px;
-    font-family: 'Open Sans', sans-serif;
+/*
+  в css есть переменные, я создаю их, чтобы вынести какие-то общие значения
+  или то, что необходимо быстро поменять
+  (некоторые размеры, цвета и прочее или то, что используется 2 или более раз)
+ */
+ :root {
+  --border-radius: 8px;
+  --navbar-item-active: #0a1c40;
+  --submenu-item-hover-color: #fdfdfd;
+  --submenu-item-color: #939393;
 }
 
-ul {
-    display: flex;
-    padding-left: 0;
-    list-style: none;
-    margin: 50px 50px 50px 50px;
-    position: absolute;
-    background-image: url('./images/background.png');
-    background-size: cover;
-    border-radius: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+li {
+  position: relative;
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  background-image: url('./images/background.png');
+  background-size: cover;
+  border-radius: var(--border-radius);
+}
+
+/*
+  здесь я указал стрелочки, чтобы применять стили только к прилежащим элементам
+  то есть ко всем внутренним они применяться не будут
+*/
+.navbar > li > a:hover,
+.navbar > li > a:focus {
+  color: #fff;
 }
 
 a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 1em;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  white-space: nowrap;
 }
 
-a:hover {
-    background: rgba(255, 255, 255, 0.3);
+.submenu {
+  left: -50%;
+  top: 99%;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  opacity: 0;
+  display: none;
+  transition: all ease .3s;
+  padding: 1rem;
+}
+
+.submenu a {
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  color: var(--submenu-item-color);
+}
+
+.submenu li {
+  width: 100%;
+  background: #0a1c40;
+}
+
+.submenu li:last-child {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+.submenu li:first-child {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+li:focus-within > .submenu,
+li:hover .submenu {
+  display: flex;
+  opacity: 1;
+}
+
+.menu > ul > li:hover > a {
+  background: var(--navbar-item-active);
+}
+
+.submenu li:hover > a {
+  color: var(--submenu-item-hover-color);
+}
+
+.menu li:first-child a {
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.menu li:last-child a {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
 }
