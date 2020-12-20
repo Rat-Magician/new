@@ -3,8 +3,11 @@
   или то, что необходимо быстро поменять
   (некоторые размеры, цвета и прочее или то, что используется 2 или более раз)
  */
-:root {
+ :root {
   --border-radius: 8px;
+  --navbar-item-active: #0a1c40;
+  --submenu-item-hover-color: #fdfdfd;
+  --submenu-item-color: #939393;
 }
 
 * {
@@ -44,8 +47,7 @@ li {
 */
 .navbar > li > a:hover,
 .navbar > li > a:focus {
-  color: #b7dcff;
-  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
 }
 
 a {
@@ -70,18 +72,18 @@ a {
 
 .submenu a {
   border-bottom: 1px solid rgba(255, 255, 255, .1);
+  color: var(--submenu-item-color);
 }
 
 .submenu li {
   width: 100%;
-  background: #273037;
+  background: #0a1c40;
 }
 
 .submenu li:last-child {
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
 }
-
 .submenu li:first-child {
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
@@ -91,4 +93,22 @@ li:focus-within > .submenu,
 li:hover .submenu {
   display: flex;
   opacity: 1;
+}
+
+.menu > ul > li:hover > a {
+  background: var(--navbar-item-active);
+}
+
+.submenu li:hover > a {
+  color: var(--submenu-item-hover-color);
+}
+
+.menu li:first-child a {
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.menu li:last-child a {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
 }
