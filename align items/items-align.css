@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display:flex;
+    align-content: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    color: #ffffff;
+}
+.container {
+    padding: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 10px;
+    align-content: flex-start;
+    position: relative;
+    border: 2px solid #C1C1C1;
+    width: 450px;
+    height: 545px;
+
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px; 
+    background-color: #C4C4C4;
+    flex-wrap: wrap;
+}
+
+.container div {
+    margin: 10px;
+}
