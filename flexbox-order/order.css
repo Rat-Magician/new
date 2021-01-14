@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin-block: 0;
+    margin-inline: 0;
+    padding-block: 0;
+    padding-inline: 0;
+}
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 87px;
+}
+
+.main {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 849px;
+    margin: 61px;
+    height: 167px;
+    box-sizing: border-box;
+    border: 1px solid #C1C1C1;
+}
+.container.third {
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    flex-flow: column;
+    padding: 36px;
+    position: absolute;
+}
+
+.first, .second {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+}
+
+.gray {
+    background-color:gray;
+}
+
+.black {
+    background-color: black;
+}
+
+.dark-gray {
+    background-color: #474748;
+}
+
+.blue {
+    background-color: #1C6CE6;
+}
+
+.second .black {
+    order: 1;
+}
+
+.second .dark-gray {
+    order: 2;
+}
+
+.third .dark-gray {
+    order: 1;
+}
+
+.third .black {
+    order: 2;
+}
+
+.third .blue {
+    order: 3;
+}
+
+.third .black,
+.third .dark-gray,
+.third .blue {
+    margin-top: 36px;
+}
