@@ -1,0 +1,49 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle {
+    vertical-align: top;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #3E7AB2;
+}
+
+.up {
+    top: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.one {
+    position: absolute;
+    top: 81px;
+}
+
+.rectangle {
+    width: 76px;
+    height: 76px;
+    background-color: #C04848;
+}
+
+.rectangle-big {
+    position: relative;;
+    width: 150px;
+    height: 83px;
+    background-color: yellow;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
