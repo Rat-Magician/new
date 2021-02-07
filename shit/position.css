@@ -4,8 +4,8 @@
 
 .circle {
     vertical-align: top;
-    width: 55px;
-    height: 55px;
+    width: 49px;
+    height: 49px;
     position: absolute;
     border-radius: 50%;
     background: #3E7AB2;
@@ -26,13 +26,13 @@
 
 .circle_top {
     top: -66px;
-    left: -3px;
+    left: 0;
     right: 0;
     margin: auto;
 }
 
 .circle_left {
-    left: -66px;
+    left: -62px;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -54,4 +54,58 @@
     margin: auto;
     left: 0;
     right: 0;
+}
+
+
+.small_two {
+    top: 0;
+    bottom: 6px;
+    left: -234px;
+}
+
+.circle_top_two {
+    left: -61px;
+}
+
+.circle_right_two {
+    bottom: 62px;
+}
+
+.circle_left_two {
+    top: 62px;
+}
+
+.small_three {
+    top: 186px;
+    bottom: 18px;
+}
+
+.circle_top_three {
+    left: -60px;
+}
+
+.circle_left_three {
+    top: 62px;
+}
+
+.circle_right_three {
+    left: 62px;
+}
+
+.small_four {
+    top: 0;
+    bottom: 6px;
+    right: -234px;
+}
+
+.circle_top_four {
+    bottom: 62px;
+}
+
+.circle_right_four {
+    right: -62px;
+}
+
+.circle_left_four {
+    top: 62px;
 }
